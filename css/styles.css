@@ -1,4 +1,9 @@
-
+:root {
+  --blue: #5267df;
+  --tomato: #fa5959;
+  --dark: #242a45;
+  --grey: #9194a2;
+}
 /* GLOBAL */
 html {
   box-sizing: border-box;
@@ -23,16 +28,27 @@ body {
   height: 100%;
   padding: 0;
   margin: 0;
-  font-family: "Arial", sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  background-color: #fff;
-  color: #222;
+  font-family: "Rubik","Arial", sans-serif;
+  font-size: 18px;
+  line-height: 28px;
+  background-color: #f2f2f2;
+  color: var(--dark);
 }
 
 img {
   max-width: 100%;
   height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 
