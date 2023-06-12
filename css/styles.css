@@ -13,11 +13,6 @@ html {
   scroll-behavior: smooth;
 }
 
-*:focus {
-  outline: 2px dotted orchid;
-  outline-offset: 2px;
-}
-
 *,
 *::before,
 *::after {
@@ -37,10 +32,15 @@ body {
   color: var(--text-50);
 }
 
+a {
+  text-decoration: none;
+}
+
 img {
   max-width: 100%;
   height: auto;
 }
+
 
 .visually-hidden {
   position: absolute;
@@ -51,6 +51,49 @@ img {
   padding: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+/* LOGO */
+.logo {
+  display: block;
+}
+
+.logo:hover {
+  opacity: 0.8;
+}
+.logo:active {
+  opacity: 0.6;
+}
+
+.logo__img {
+  display: block;
+  width: 149px;
+  height: 25px;
+  object-fit: contain;
+}
+
+/* BUTTONS */
+.button {
+  display: inline-block;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 0px 8px 8px -4px rgba(73, 93, 207, 0.20012);
+}
+
+.button--red {
+  width: 111px;
+  margin-right: -30px;
+  padding: 12px 32px;
+  font-weight: 500;
+  background-color: var(--red);
+}
+
+.button--red:hover {
+  border-color: var(--red);
+  color: var(--red);
+  background-color: transparent;
 }
 
 
@@ -70,69 +113,59 @@ img {
   flex-grow: 1;
 }
 
+
 /* SITE-HEADER */
 .site-header {
   padding-top: 48px;
+  padding-bottom: 48px;
   font-size: 13px;
   line-height: 17px;
   letter-spacing: 1.5px;
+  text-transform: uppercase;
 }
 
 .site-header__container {
   display: flex;
   align-items: center;
-  padding-left: 60px;
 }
 
 .site-header__logo {
-  margin-right: 50px;
+  margin-right: auto;
 }
 
-.logo {
-  width: 150px;
-  height: 25px;
-  object-fit: contain;
-}
 
+/* SITENAV */
 .site-header__sitenav {
-  margin-left: auto;
+  margin-right: 48px;
+}
+
+.sitenav {
+  font-size: 13px;
+  line-height: 17px;
+  letter-spacing: 1.5px;
 }
 
 .sitenav__list {
   display: flex;
   padding: 0;
-  margin-right: -30px;
+  margin: 0;
   list-style: none;
 }
 
-.sitenav__item:not(:first-child) {
-  margin-left: 10px;
+.sitenav__item:not(:last-child) {
   margin-right: 48px;
-}
-
-.sitenav__item:nth-child(1) {
-  margin-right: 44px;
 }
 
 .sitenav__link {
   display: block;
   font-weight: 400;
   color: var(--text-color);
-  text-transform: uppercase;
-  text-decoration: none;
 }
 
-.button {
-  border: 0;
-  border-radius: 5px;
-  color: #fff;
-  box-shadow: 0px 8px 8px -4px rgba(73, 93, 207, 0.20012);
+.sitenav__link:hover {
+  color: var(--red);
 }
 
-.button-red {
-  margin-right: -20px;
-  padding: 12px 32px;
-  font-weight: 500;
-  text-transform: uppercase;
-  background-color: var(--red);
+.sitenav__link:active {
+  opacity: 0.6;
 }
