@@ -1,6 +1,6 @@
 :root {
   --blue: #5267df;
-  --tomato: #fa5959;
+  --red: #fa5959;
   --text-color: #242a45;
   --grey: #9194a2;
   --text-75: rgb(36, 42, 69, 0.75);
@@ -68,4 +68,71 @@ img {
 /* MAIN-CONTENT */
 .main-content {
   flex-grow: 1;
+}
+
+/* SITE-HEADER */
+.site-header {
+  padding-top: 48px;
+  font-size: 13px;
+  line-height: 17px;
+  letter-spacing: 1.5px;
+}
+
+.site-header__container {
+  display: flex;
+  align-items: center;
+  padding-left: 60px;
+}
+
+.site-header__logo {
+  margin-right: 50px;
+}
+
+.logo {
+  width: 150px;
+  height: 25px;
+  object-fit: contain;
+}
+
+.site-header__sitenav {
+  margin-left: auto;
+}
+
+.sitenav__list {
+  display: flex;
+  padding: 0;
+  margin-right: -30px;
+  list-style: none;
+}
+
+.sitenav__item:not(:first-child) {
+  margin-left: 10px;
+  margin-right: 48px;
+}
+
+.sitenav__item:nth-child(1) {
+  margin-right: 44px;
+}
+
+.sitenav__link {
+  display: block;
+  font-weight: 400;
+  color: var(--text-color);
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.button {
+  border: 0;
+  border-radius: 5px;
+  color: #fff;
+  box-shadow: 0px 8px 8px -4px rgba(73, 93, 207, 0.20012);
+}
+
+.button-red {
+  margin-right: -20px;
+  padding: 12px 32px;
+  font-weight: 500;
+  text-transform: uppercase;
+  background-color: var(--red);
 }
