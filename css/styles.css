@@ -1,8 +1,10 @@
 :root {
   --blue: #5267df;
   --tomato: #fa5959;
-  --dark: #242a45;
+  --text-color: #242a45;
   --grey: #9194a2;
+  --text-75: rgb(36, 42, 69, 0.75);
+  --text-50: rgb(36, 42, 69, 0.5);
 }
 /* GLOBAL */
 html {
@@ -32,7 +34,7 @@ body {
   font-size: 18px;
   line-height: 28px;
   background-color: #f2f2f2;
-  color: var(--dark);
+  color: var(--text-50);
 }
 
 img {
