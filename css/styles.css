@@ -108,9 +108,21 @@ img {
   background-color: var(--blue);
 }
 
+.buttun--blue:hover {
+  border-color: var(--blue);
+  color: var(--blue);
+  background-color: transparent;
+}
+
 .button-grey {
   color: var(--text-color);
   background-color: #f7f7f7;
+}
+
+.button-grey:hover {
+  border-color: var(--grey);
+  color: var(--text-75);
+  background-color: transparent;
 }
 
 
