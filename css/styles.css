@@ -28,6 +28,7 @@ body {
   font-family: "Rubik","Arial", sans-serif;
   font-size: 16px;
   line-height: 36px;
+  overflow-x: hidden;
   background-color: #f2f2f2;
   color: var(--text-50);
 }
@@ -76,6 +77,11 @@ img {
 .button {
   display: inline-block;
   border: 2px solid transparent;
+  padding: 10px 24px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 28px;
+  letter-spacing: 0.25px;
   border-radius: 5px;
   color: #fff;
   cursor: pointer;
@@ -86,7 +92,9 @@ img {
   width: 111px;
   margin-right: -30px;
   padding: 12px 32px;
-  font-weight: 500;
+  font-size: 13px;
+  line-height: 17px;
+  letter-spacing: 1.5px;
   background-color: var(--red);
 }
 
@@ -94,6 +102,15 @@ img {
   border-color: var(--red);
   color: var(--red);
   background-color: transparent;
+}
+
+.buttun--blue {
+  background-color: var(--blue);
+}
+
+.button-grey {
+  color: var(--text-color);
+  background-color: #f7f7f7;
 }
 
 
@@ -168,4 +185,63 @@ img {
 
 .sitenav__link:active {
   opacity: 0.6;
+}
+
+
+/* HERO */
+.hero {
+  padding-top: 66px;
+  padding-bottom: 105px;
+  background-image: url("../img/blue-pill-bg.svg");
+  background-repeat: no-repeat;
+  background-position: calc(50% + 700px) 200px;
+}
+
+.hero__container {
+  display: flex;
+  align-items: flex-start;
+}
+
+.hero__content {
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 540px;
+  padding-top: 65px;
+  margin-right: 67px;
+}
+
+.hero__title {
+  margin-bottom: 24px;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 52px;
+  letter-spacing: -0.15px;
+  color: var(--text-color);
+}
+
+.hero__description {
+  margin-top: 0;
+  margin-bottom: 32px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: var(--text-50);
+}
+
+.hero__actions {
+  display: flex;
+  margin: 0;
+}
+
+.hero__actions-item:not(:last-child) {
+  margin-right: 16px;
+}
+
+.hero-img {
+  flex-shrink: 0;
+  width: 578px;
+  height: 385px;
+  object-fit: contain;
+  border-radius: 25px;
+  filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.5));
 }
