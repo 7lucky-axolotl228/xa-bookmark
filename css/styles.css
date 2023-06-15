@@ -304,6 +304,83 @@ img {
   filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.5));
 }
 
+/* SECTION FEATURES */
+.features {
+  background-image: url("../img/blue-pill-bg.svg");
+  background-repeat: no-repeat;
+  background-position: calc(100% - 800px) 500px;
+}
+.section__features-list {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.section__features-item {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.section__features-item-title {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 17px;
+  letter-spacing: 0.53px;
+  color: var(--text-color);
+}
+
+.section__features-item-title:not(:last-child) {
+  margin-right: 90px;
+}
+.item-active {
+}
+
+.section__features-wrapper {
+  display: flex;
+  align-items: center;
+}
+.features-main {
+  justify-content: space-between;
+  margin-top: 72px;
+}
+
+
+.section__features-img {
+  width: 536;
+  height: 346px;
+  margin-right: 125px;
+  object-fit: contain;
+}
+
+.features-main__info {
+  width: 100%;
+  max-width: 450px;
+}
+
+.features-main__title {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 52px;
+  letter-spacing: -0.1px;
+  color: var(--text-color);
+}
+
+.features-main__description {
+  margin-top: 0;
+  margin-bottom: 32px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: var(--text-color);
+}
+
+
 
 /* SECTION EXTENSION */
 .section__ex-list {
