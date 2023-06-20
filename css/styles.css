@@ -304,64 +304,88 @@ img {
   filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.5));
 }
 
+
 /* SECTION FEATURES */
-.features {
-  background-image: url("../img/blue-pill-bg.svg");
-  background-repeat: no-repeat;
-  background-position: calc(100% - 800px) 500px;
+.features__section-info {
+  margin-bottom: 44px;
 }
-.section__features-list {
+
+
+/* TABS */
+.tabs__list {
   display: flex;
-  flex-grow: 1;
-  align-items: center;
-  margin: 0;
+  justify-content: center;
   padding: 0;
+  margin: 0;
   list-style: none;
 }
 
-.section__features-item {
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
+.tabs__item {
+  width: 243px;
+  border-bottom: 1px solid rgb(73, 93, 207, 0.2);
 }
 
-.section__features-item-title {
+.tabs__link {
+  display: block;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  border-bottom: 4px solid transparent;
   font-weight: 400;
   font-size: 16px;
   line-height: 17px;
   letter-spacing: 0.53px;
+  text-align: center;
+  color: var(--text-75);
+}
+
+.tabs__item--active .tabs__link{
   color: var(--text-color);
+  border-color: var(--red);
 }
 
-.section__features-item-title:not(:last-child) {
-  margin-right: 90px;
-}
-.item-active {
+.tabs__link:hover {
+  color: var(--red);
 }
 
-.section__features-wrapper {
+.tabs__link:active {
+  opacity: 0.6;
+}
+
+
+/* TABS-PANELS */
+.tabs__panels {
+  padding-top: 75px;
+  padding-bottom: 165px;
+  background-image: url("../img/blue-pill-bg.svg");
+  background-repeat: no-repeat;
+  background-position: calc(50% - 580px) 156px;
+}
+
+.tabs__panel {
+  display: none;
+}
+
+.tabs__panel--active {
+  display: block;
+}
+
+/* FEATURE-TAB-PANEL */
+.feature-tab-panel {
   display: flex;
   align-items: center;
-}
-.features-main {
   justify-content: space-between;
-  margin-top: 72px;
 }
 
-
-.section__features-img {
-  width: 536;
-  height: 346px;
-  margin-right: 125px;
+.feature-tab-panel__img {
+  margin-right: 30px;
   object-fit: contain;
 }
 
-.features-main__info {
-  width: 100%;
-  max-width: 450px;
+.feature-tab-panel__info {
+  max-width: 445px;
 }
 
-.features-main__title {
+.feature-tab-panel__title {
   margin-top: 0;
   margin-bottom: 16px;
   font-weight: 500;
@@ -371,14 +395,19 @@ img {
   color: var(--text-color);
 }
 
-.features-main__description {
+.feature-tab-panel__text {
   margin-top: 0;
   margin-bottom: 32px;
   font-weight: 400;
   font-size: 18px;
   line-height: 28px;
-  color: var(--text-color);
+  color: var(--text-50);
 }
+
+
+
+
+
 
 
 

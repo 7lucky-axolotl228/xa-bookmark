@@ -55,36 +55,69 @@
     </div>
 
     <!-- Features -->
-    <section class="section features">
+    <section class="features section">
       <div class="container">
-        <div class="section__info">
+        <div class="features__section-info section__info">
           <h2 class="section__title">Features</h2>
           <p class="section__description">Our aim is to make it quick and easy for you to access your <br> favourite websites. Your bookmarks sync between your devices <br> so you can access them on the go.</p>
         </div>
 
-        <ul class="section__features-list">
-          <li class="section__features-item item-active">
-            <h4 class="section__features-item-title">Simple Bookmarking</h4>
-          </li>
-          <li class="section__features-item">
-            <h4 class="section__features-item-title">Speedy Searching</h4>
-          </li>
-          <li class="section__features-item">
-            <h4 class="section__features-item-title">Easy Sharing</h4>
-          </li>
-        </ul>
-
-        <div class="section__features-wrapper features-main">
-          <img class="section__features-img" src="img/features-tablet.svg" alt="" width="536" height="346">
-
-          <div class="features-main__info">
-            <h3 class="features-main__title">Bookmark in one click</h3>
-            <p class="features-main__description">Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.</p>
-            <a class="button button--blue" href="">More Info</a>
-          </div>
+        <!-- TABS -->
+        <div class="tabs">
+          <!-- TABS-LIST -->
+          <ul class="tabs__list">
+            <li class="tabs__item tabs__item--active">
+              <a class="tabs__link" href="#feature-simple-bookmarking">Simple Bookmarking</a>
+            </li>
+            <li class="tabs__item">
+              <a class="tabs__link" href="#feature-speedy-searching">Speedy Searching</a>
+            </li>
+            <li class="tabs__item">
+              <a class="tabs__link" href="#feature-easy-sharing">Easy Sharing</a>
+            </li>
+          </ul>
         </div>
 
       </div>
+
+      <!-- TABS-CONTENT -->
+      <div class="tabs__panels">
+        <div class="container">
+          <div class="tabs__panel tabs__panel--active" id="feature-simple-bookmarking">
+                <section class="feature-tab-panel">
+                  <img class="feature-tab-panel__img" src="img/feature-1.svg" alt="Bookmark manager illustration" width="536" height="346">
+                  <div class="feature-tab-panel__info">
+                    <h3 class="feature-tab-panel__title">Bookmark in one click</h3>
+                    <p class="feature-tab-panel__text">Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.</p>
+                    <a class="button button--blue" href="">More Info</a>
+                  </div>
+                </section>
+          </div>
+
+          <div class="tabs__panel" id="feature-speedy-searching">
+                <section class="feature-tab-panel">
+                  <img class="feature-tab-panel__img" src="img/feature-2.svg" alt="Bookmark search illustration" width="468" height="393">
+                  <div class="feature-tab-panel__info">
+                    <h3 class="feature-tab-panel__title">Intelligent search</h3>
+                    <p class="feature-tab-panel__text">Our powerful search feature will help you find saved sites in no time at all. No need to trawl through all of your bookmarks.</p>
+                    <a class="button button--blue" href="">More Info</a>
+                  </div>
+                </section>
+          </div>
+
+          <div class="tabs__panel" id="feature-easy-sharing">
+                <section class="feature-tab-panel">
+                  <img class="feature-tab-panel__img" src="img/feature-3.svg" alt="Bookmark share illustration" width="440" height="380">
+                  <div class="feature-tab-panel__info">
+                    <h3 class="feature-tab-panel__title">Share your bookmarks</h3>
+                    <p class="feature-tab-panel__text">Easily share your bookmarks and collections with others. Create a shareable link that you can send at the click of a button.</p>
+                    <a class="button button--blue" href="">More Info</a>
+                  </div>
+                </section>
+          </div>
+        </div>
+      </div>
+
     </section>
 
     <!-- Download the extension -->
@@ -101,7 +134,7 @@
             <h3 class="section__ex-title">Add to Chrome</h3>
             <p class="section__ex-description">Minimum version 62</p>
             <button class="button button--blue button--block">Add & Install Extension</button>
-            <img class="section__ex-bg-img" src="img/extansion-dot.svg" alt="" width="" height="">
+            <!-- <img class="section__ex-bg-img" src="img/extansion-dot.svg" alt="" width="" height=""> -->
           </li>
 
           <li class="section__ex-item">
@@ -109,7 +142,7 @@
             <h3 class="section__ex-title">Add to Firefox</h3>
             <p class="section__ex-description">Minimum version 55</p>
             <button class="button button--blue button--block">Add & Install Extension</button>
-            <img class="section__ex-bg-img" src="img/extansion-dot.svg" alt="" width="" height="">
+            <!-- <img class="section__ex-bg-img" src="img/extansion-dot.svg" alt="" width="" height=""> -->
           </li>
 
           <li class="section__ex-item">
@@ -117,7 +150,7 @@
             <h3 class="section__ex-title">Add to Opera</h3>
             <p class="section__ex-description">Minimum version 46</p>
             <button class="button button--blue button--block">Add & Install Extension</button>
-            <img class="section__ex-bg-img" src="img/extansion-dot.svg" alt="" width="" height="">
+            <!-- <img class="section__ex-bg-img" src="img/extansion-dot.svg" alt="" width="" height=""> -->
           </li>
 
         </ul>
