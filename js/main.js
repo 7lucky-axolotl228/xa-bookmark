@@ -29,9 +29,11 @@ elsTabLink.forEach(function (elTabLink) {
     deactivateTabPanels();
 
     //Show active tab panel
-    const elTargetPanel = document.querySelector(`#${elTabLink.href.split('#')[1]}`);
+    // const elTargetPanel = document.querySelector(`#${elTabLink.href.split('#')[1]}`);
+    const elTargetPanel = document.querySelector(elTabLink.dataset.tabTarget);
     elTargetPanel.classList.add('tabs__panel--active');
 
+    console.log(elTabLink.dataset.tabTarget);
     console.log(elTargetPanel);
   });
 });
