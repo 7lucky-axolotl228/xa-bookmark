@@ -103,7 +103,7 @@ img {
   background-color: transparent;
 }
 
-.btn--site-header {
+.site-header__btn {
   padding: 10px 31px;
   font-size: 13px;
   line-height: 17px;
@@ -353,7 +353,7 @@ img {
 
 
 /* TABS-PANELS */
-.tabs__panels {
+.tabpanels {
   padding-top: 75px;
   padding-bottom: 165px;
   background-image: url("../img/blue-pill-bg.svg");
@@ -361,11 +361,11 @@ img {
   background-position: calc(50% - 580px) 156px;
 }
 
-.tabs__panel {
+.tabpanels__item {
   display: none;
 }
 
-.tabs__panel--active {
+.tabpanels__item--active {
   display: block;
 }
 
