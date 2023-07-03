@@ -373,12 +373,22 @@ img {
 .feature-tab-panel {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-end;
 }
 
 .feature-tab-panel__img {
   margin-right: 30px;
   object-fit: contain;
+}
+
+.feature-tab-panel__img--bookmark {
+  margin-right: 125px;
+}
+.feature-tab-panel__img--search {
+  margin-right: 118px;
+}
+.feature-tab-panel__img--share {
+  margin-right: 146px;
 }
 
 .feature-tab-panel__info {
