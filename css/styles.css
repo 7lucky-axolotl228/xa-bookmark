@@ -306,6 +306,9 @@ img {
 
 
 /* SECTION FEATURES */
+.features {
+  padding-bottom: 0;
+}
 .features__section-info {
   margin-bottom: 44px;
 }
@@ -422,58 +425,78 @@ img {
 
 
 /* SECTION EXTENSION */
-.section__ex-list {
+.extensions__inner {
+  max-width: 910px;
+  margin: 0 auto;
+}
+.extensions__list {
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
+  align-items: flex-start;
   text-align: center;
   padding: 0;
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: -35px;
   list-style: none;
 }
 
-.section__ex-item {
-  position: relative;
-  width: 280px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 49px 24px 24px 24px;
-  border-radius: 15px;
-  text-align: center;
-  background-color: #fff;
-  box-shadow: 0px 10px 20px -5px rgba(73, 93, 207, 0.20012);
+.extensions__item {
+  max-width: 280px;
+  width: 100%;
+  margin-left: 35px;
 }
 
-.section__ex-bg-img {
+.extensions__item:nth-child(2) {
+  margin-top: 40px;
+}
+.extensions__item:nth-child(3) {
+  margin-top: 80px;
+}
+
+.extension {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 43px 24px 24px;
+  box-shadow: 0px 10px 20px -5px rgba(73, 93, 207, 0.20012);
+  border-radius: 15px;
+  background-color: #fff;
+}
+
+.extension::after {
   position: absolute;
   left: 0;
-  bottom: 100px;
+  bottom: 96px;
+  width: 100%;
+  height: 4px;
+  background-image: url("../img/extansion-dot.svg");
+  background-position: center center;
+  content: "";
 }
 
-.section__ex-item:not(:last-child) {
-  margin-right: 35px;
-}
-
-.section__ex-img {
-  margin: 0;
-  width: 100px;
+.extension__img {
+  width: 105px;
   height: 100px;
+  margin-bottom: 32px;
   object-fit: contain;
 }
 
-.section__ex-title {
-  margin-top: 17px;
+.extension__title {
+  margin-top: 0;
   margin-bottom: 6px;
   font-weight: 500;
   font-size: 20px;
-  line-height: 23.7px;
+  line-height: normal;
   letter-spacing: 0.25px;
   color: var(--text-color);
 }
 
-.section__ex-description {
+.extension__browser-version {
   margin-top: 0;
   margin-bottom: 60px;
-  font-weight: 400;
   font-size: 15px;
   line-height: 28px;
   color: var(--text-50);
