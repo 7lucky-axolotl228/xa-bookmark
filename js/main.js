@@ -28,6 +28,10 @@ elsTabLink.forEach(function (elTabLink) {
     //Remove active class from tabs__item elements
     deactivateTabPanels();
 
-    console.log(elTabLink.href.split('#')[1]);
+    //Show active tab panel
+    const elTargetPanel = document.querySelector(`#${elTabLink.href.split('#')[1]}`);
+    elTargetPanel.classList.add('tabs__panel--active');
+
+    console.log(elTargetPanel);
   });
 });
