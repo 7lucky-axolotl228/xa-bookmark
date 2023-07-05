@@ -508,6 +508,15 @@ img {
   padding-bottom: 150px;
 }
 
+.faq__section-info {
+  margin-top: -3px;
+  margin-bottom: 51px;
+}
+
+.faq__section-title {
+  margin-left: -20px;
+}
+
 .faq__inner {
   display: flex;
   flex-direction: column;
@@ -525,6 +534,7 @@ img {
 
 /* Accordion */
 .accordion {
+  margin-left: -13px;
   border-top: 1px solid rgb(36, 42, 69, 0.15);
 }
 .accordion__item {
@@ -534,8 +544,9 @@ img {
   position: relative;
   display: flex;
   align-items: center;
-  padding-top: 20px;
+  padding-top: 21px;
   padding-bottom: 13px;
+  padding-right: 36px;
 }
 
 .accordion__item-header:hover .accordion__item-title {
@@ -554,7 +565,6 @@ img {
 .accordion__item-toggler {
   border: 0;
   padding: 0;
-  padding-right: 24px;
   cursor: pointer;
   background-color: transparent;
 }
