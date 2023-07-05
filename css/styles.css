@@ -100,7 +100,7 @@ img {
 .button--red:hover {
   border-color: var(--red);
   color: var(--red);
-  background-color: transparent;
+  background-color: #fff;
 }
 
 .site-header__btn {
@@ -611,4 +611,98 @@ img {
 
 .accordion__item-text {
   margin: 0;
+}
+
+
+/* Subscription */
+.subscription {
+  padding-top: 58px;
+  padding-bottom: 74px;
+  color: #fff;
+  background-color: var(--blue);
+}
+
+.subscription__inner {
+  width: 100%;
+  max-width: 470px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.subscription__count-text {
+  margin-top: 0;
+  margin-bottom: 24px;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 40px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+.subscription__heading {
+  margin-top: 0;
+  margin-bottom: 36px;
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: 500;
+}
+.subscription__form {
+  display: flex;
+}
+
+.subscription__field-wrapper {
+  position: relative;
+  z-index: 1;
+  width: 300px;
+  margin-right: 16px;
+}
+
+.subscription__field {
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 8px 20px;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  font-size: 14px;
+  line-height: 28px;
+}
+
+.subscription__field:not(:focus):not(:placeholder-shown):invalid {
+  padding-right: 52px;
+  border-color: var(--red);
+  background-image: url("../img/error-disc.svg");
+  background-repeat: no-repeat;
+  background-position: right 16px center;
+}
+
+.subscription__error {
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  top: calc(100% - 5px);
+  display: none;
+  width: 100%;
+  padding: 6px 12px;
+  border-radius: 0 0 5px 5px;
+  background-color: var(--red);
+  color: #fff;
+  font-size: 10px;
+  line-height: 12;
+  font-weight: 500;
+  text-align: left;
+  font-style: italic;
+}
+
+.subscription__field:not(:focus):not(:placeholder-shown):invalid ~ .subscription__error {
+  display: block;
+}
+
+
+.subscription__field:focus ~ .subscription__error,
+.subscription__field:valid ~ .subscription__error,
+.subscription__field:placeholder-shown ~ .subscription__error {
+  display: none;
 }
