@@ -1,3 +1,10 @@
+const modifiers = {
+  tabItemActive: 'tabs__item--active',
+  tabPanelsItemsActive: 'tabpanels__item--active',
+  accordionItemOpen: 'accordion__item--open'
+};
+
+
 const elsTabsItem = document.querySelectorAll('.tabs__item');
 const elsTabLink = document.querySelectorAll('.js-tab-link');
 const elsTabsPanel = document.querySelectorAll('.tabpanels__item');
@@ -8,18 +15,18 @@ const elsAccordionItemToggler = document.querySelectorAll('.accordion__item-togg
 // Functions
 function deactivateTabItems () {
   elsTabsItem.forEach(function (elTabsItem) {
-    elTabsItem.classList.remove('tabs__item--active');
+    elTabsItem.classList.remove(modifiers.tabItemActive);
   });
 }
 function deactivateTabPanels () {
   elsTabsPanel.forEach(function (elTabsPanel) {
-    elTabsPanel.classList.remove('tabpanels__item--active');
+    elTabsPanel.classList.remove(modifiers.tabPanelsItemsActive);
   });
 }
 
 function closeAccordionItems () {
   elsAccordionItem.forEach(function (elAccordionItem) {
-    elAccordionItem.classList.remove('accordion__item--open');
+    elAccordionItem.classList.remove(modifiers.accordionItemOpen);
   });
 }
 
@@ -34,7 +41,7 @@ elsTabLink.forEach(function (elTabLink) {
     deactivateTabItems();
 
     // Add active class to clicked tabs__item
-    elTabLink.parentElement.classList.add('tabs__item--active');
+    elTabLink.parentElement.classList.add(modifiers.tabItemActive);
 
     //Remove active class from tabs__item elements
     deactivateTabPanels();
@@ -42,7 +49,7 @@ elsTabLink.forEach(function (elTabLink) {
     //Show active tab panel
     // const elTargetPanel = document.querySelector(`#${elTabLink.href.split('#')[1]}`);
     const elTargetPanel = document.querySelector(elTabLink.dataset.tabTarget);
-    elTargetPanel.classList.add('tabpanels__item--active');
+    elTargetPanel.classList.add(modifiers.tabPanelsItemsActive);
 
     console.log(elTabLink.dataset.tabTarget);
     console.log(elTargetPanel);
@@ -55,6 +62,6 @@ elsAccordionItemToggler.forEach(function (elAccordionItemtoggler) {
   elAccordionItemtoggler.addEventListener('click', function () {
     closeAccordionItems();
 
-    elAccordionItemtoggler.closest('.accordion__item').classList.add('accordion__item--open')
+    elAccordionItemtoggler.closest('.accordion__item').classList.add(modifiers.accordionItemOpen)
   });
 });
